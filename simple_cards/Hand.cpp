@@ -1,16 +1,8 @@
-//
-//  Hand.cpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
-
 #include "Hand.hpp"
 #include "Card.hpp"
 #include "Deck.hpp"
 
-
-namespace ECE17 {
+namespace GT {
 
     Hand::Hand() = default; 
         
@@ -44,8 +36,7 @@ namespace ECE17 {
             holdingCards.erase(position); 
         }
 
-        return std::nullopt; 
-        
+        return std::nullopt;  
     }
 
     // returns the number of Card objects the Hand contains
@@ -73,4 +64,4 @@ namespace ECE17 {
     return anOutput;
   }
 
-}
+} // end of namespace
