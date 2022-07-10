@@ -10,7 +10,7 @@
 #include <optional>
 #include <algorithm>
 
-namespace ECE17 {
+namespace GT {
 
   const int kCardsPerHand{5};
 
