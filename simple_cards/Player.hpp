@@ -1,10 +1,3 @@
-//
-//  Player.hpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
-
 #ifndef Player_hpp
 #define Player_hpp
 
@@ -16,9 +9,8 @@
 
 using namespace std; 
 
-namespace ECE17 {
-
-    //STUDENT: implement this class from assigment...
+namespace GT {
+    
     class Player {
 
     public: 
@@ -38,7 +30,6 @@ namespace ECE17 {
         Hand playerHand;
     };
       
-
-}
+} // end of namespace 
 
 #endif /* Player_hpp */
