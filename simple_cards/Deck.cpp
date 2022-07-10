@@ -1,10 +1,3 @@
-//
-//  Deck.cpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
-
 #include "Deck.hpp"
 #include "Card.hpp"
 #include "Hand.hpp"
@@ -14,9 +7,8 @@
 #include <iostream>
 #include <algorithm>
 #include <random>
-//#include <random>
 
-namespace ECE17 {
+namespace GT {
     //initialize deck of cards here in default
 
     Deck::Deck() {
@@ -42,7 +34,7 @@ namespace ECE17 {
         }
     }
 
-    //void Deck::shuffle() {
+    
     Deck& Deck::shuffle() {
         std::random_device rd; 
         std::mt19937 shuffleThis(rd()); 
@@ -83,10 +75,8 @@ namespace ECE17 {
       for (Card aDeck: aDeck.deck) {
           anOutput << aDeck << "\n"; 
       }
-
-    
-     
+      
     return anOutput;
   }
   
-}
+}// end of namespace 
