@@ -1,9 +1,3 @@
-//
-//  Card.hpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
 
 #ifndef Card_hpp
 #define Card_hpp
@@ -11,9 +5,9 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
-#include <optional>
+#include <optional> //C++ 17
 
-namespace ECE17 {
+namespace GT {
 
   enum class Suits
     : char {clubs='C', diamonds='D', hearts='H', spades='S'};
@@ -24,7 +18,7 @@ namespace ECE17 {
     
   class Card {
   public:
-    //i think this is initializer, face starts with ace and suits starts with clubs
+    // initializer, face starts with ace and suits starts with clubs
     Card(Faces aFace=Faces::ace, Suits aSuit=Suits::clubs);
     Card(const Card &aCopy);
     ~Card();
@@ -41,6 +35,6 @@ namespace ECE17 {
   };
   
   using CardOpt = std::optional <Card>;
-}
+} // end of namespace 
 
 #endif /* Card_hpp */
