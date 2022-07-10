@@ -1,45 +1,8 @@
-//
-//  Player.cpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
-
 #include "Player.hpp"
 #include <iostream>
 
-namespace ECE17 {
-/*
-    Player::Player() :name("") {
-    }
+namespace GT {
 
-    Player::Player(string name) : name(name) {
-    }
-
-    void Player::setName(string n) {
-        name = n;
-    }
-
-    string Player::getName() const { 
-        return name; 
-    }
-
-    Player::Player(const Player& aPlayer) {
-        *this = aPlayer;
-    }
-    Player &Player::operator = (const Player& aPlayer) {
-       name = aPlayer.name;
-        return *this;
-    }
-   
-    Player::~Player() {}
-
-    std::ostream& operator<<(std::ostream& anOutput, const Player& aPlayer) {
-        //write the cards in your deck to the given output stream...
-        anOutput << aPlayer.name << '\n'; 
-
-        return anOutput;
-    }*/
     Player::Player() {}
     Player::Player (const char* aName = "No name") : name(aName) {}
     Player::Player(const Player & aCopy) {*this = aCopy;}
@@ -62,4 +25,4 @@ namespace ECE17 {
         return anOutput;
     }
     
-}
+} // end of namespace
