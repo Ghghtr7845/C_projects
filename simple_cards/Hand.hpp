@@ -1,13 +1,5 @@
-//
-//  Hand.hpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
-
 #ifndef Hand_hpp
 #define Hand_hpp
-
 
 #include "Card.hpp"
 #include "Deck.hpp"
@@ -24,7 +16,6 @@ namespace ECE17 {
 
   class Hand {
   public:
-    //STUDENT: implement this class from assigment...
     
       Hand(); // at first hand holds nothing
       Hand(const Hand &aCopy); 
@@ -32,9 +23,7 @@ namespace ECE17 {
       Hand& operator = (const Hand &aHand); 
 
   public: 
-
       bool addCard(const Card &aCard); 
-      //CardOpt discard(const Card &aCard);
       CardOpt discard(Faces aFace, Suits aSuit);
       size_t count(); 
       bool contain(const Card& aCard); 
@@ -44,11 +33,11 @@ namespace ECE17 {
                                     const Hand &aHand);
     
   private:
-    //how will you "hold" the cards you're given?
-      std::vector<Card> holdingCards; // a deque of type Card name cards, this will hold all the cards
+    
+      std::vector<Card> holdingCards; 
   };
    
-}
+} // end of namespace 
 
 #endif /* Hand_hpp */
 
