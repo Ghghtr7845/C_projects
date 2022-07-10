@@ -1,14 +1,7 @@
-//
-//  Card.cpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
-
 #include "Card.hpp"
 #include <iostream>
 
-namespace ECE17 {
+namespace GT {
 
   Card::Card(Faces aFace, Suits aSuit) {
     face=aFace;
@@ -36,4 +29,4 @@ namespace ECE17 {
     return anOutput;
   }
 
-}
+}// end of namespace 
