@@ -1,22 +1,13 @@
-//
-//  Game.cpp
-//  Assignment1
-//
-//  Created by rick gessner on 10/12/20.
-//
-
 #include "Game.hpp"
 #include <string>
 
-namespace ECE17 {
+namespace GT {
 
    Game:: Game() {}
 
    Game::Game(const Game& aCopy) {
         *this = aCopy; 
     }
-
-    
 
     Game& Game :: operator = (const Game& aCopy) {
         thedeck = aCopy.thedeck; 
@@ -30,4 +21,4 @@ namespace ECE17 {
   }
 
   Game::~Game() = default;
-}
+} // end of namespace 
